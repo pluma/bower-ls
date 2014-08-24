@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+/*jshint node: true, -W014 */
+"use strict";
+var bowerFiles = require('bower-files');
+var types = require('yargs')
+.usage('Usage: $0 [file extensions...]')
+.example('$0 css', 'List all bower dependency CSS main files.')
+.help('help')
+.alias('help', 'h')
+.strict()
+.argv._;
+
+var files = {};
+if (types.length === 1) {
+  files[types[0]] = bowerFiles({ext: types[0]});
+} else {
+  files = bowerFiles();
+}
+
+Object.keys(files).forEach(function (type) {
+  if (!files[type] || (types.length && types.indexOf(type) === -1)) return;
+  files[type].forEach(function (filepath) {
+    console.log(filepath);
+  });
+});

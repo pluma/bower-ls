@@ -1,0 +1,30 @@
+{
+  "name": "bower-ls",
+  "version": "1.0.0",
+  "description": "List bower depency main files on the command line.",
+  "bin": {
+    "bower-ls": "./bin/bower-ls"
+  },
+  "keywords": [
+    "bower",
+    "dependencies",
+    "list",
+    "filter",
+    "main",
+    "files"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluma/bower-ls.git"
+  },
+  "author": "Alan Plum <me@pluma.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pluma/bower-ls/issues"
+  },
+  "homepage": "https://github.com/pluma/bower-ls",
+  "dependencies": {
+    "bower-files": "^1.5.0",
+    "yargs": "^1.3.1"
+  }
+}
