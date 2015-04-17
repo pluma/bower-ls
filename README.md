@@ -1,5 +1,7 @@
 # Synopsis
 
+**NOTE:** This package has been merged into [bower-files](https://github.com/ksmithut/bower-files) and is no longer maintained.
+
 CLI wrapper for [bower-files](https://github.com/ksmithut/bower-files).
 
 [![license - MIT](http://b.repl.ca/v1/license-MIT-blue.png)](http://pluma.mit-license.org) [![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=pluma&url=https://github.com/pluma/bower-ls)
