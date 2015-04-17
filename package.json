@@ -1,6 +1,6 @@
 {
   "name": "bower-ls",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "List bower depency main files on the command line.",
   "bin": {
     "bower-ls": "./bin/bower-ls"
