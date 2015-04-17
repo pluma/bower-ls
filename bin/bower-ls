@@ -11,15 +11,12 @@ var types = require('yargs')
 .argv._;
 
 var files = {};
-if (types.length === 1) {
-  files[types[0]] = bowerFiles({ext: types[0]});
+if (types.length) {
+  files = bowerFiles().ext(types).files;
 } else {
-  files = bowerFiles();
+  files = bowerFiles().files;
 }
 
-Object.keys(files).forEach(function (type) {
-  if (!files[type] || (types.length && types.indexOf(type) === -1)) return;
-  files[type].forEach(function (filepath) {
-    console.log(filepath);
-  });
+files.forEach(function (filepath) {
+  console.log(filepath);
 });
